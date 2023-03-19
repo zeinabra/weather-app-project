@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>weather app</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,7 +24,7 @@
           width="150"
           height="42"
         />
-        <form>
+        <form id="form-control">
           <div class="row">
             <div class="col-9">
               <input
@@ -32,6 +33,7 @@
                 autofocus="on"
                 autocomplete="off"
                 class="form-control search-input"
+                id="city-input"
               />
             </div>
 
@@ -40,21 +42,39 @@
                 type="submit"
                 value="search"
                 class="btn btn-primary w-100"
+                id="search-btn"
               />
             </div>
           </div>
         </form>
         <div class="row">
-          <div class="col-8">
-            <h1>San Francisco</h1>
+          <div class="col-7">
+            <h1 id="city-name">San Francisco</h1>
             <ul>
-              <li>Sunday 12:01, moderate rain</li>
-              <li>Humidity: 82%, Wind: 7.72km/h</li>
+              <li>
+                <span id="date">Sunday 12:01</span>,
+                <span id="description">rain</span>
+              </li>
+              <li>
+                Humidity: <span id="humidity">82</span>%, Wind:<span id="wind"
+                  >7.72</span
+                >
+                km/h
+              </li>
             </ul>
           </div>
-          <div class="col-4">
-            <span><img src="src/img/canvas.png" alt="" /></span>
-            <span>11°C</span>
+          <div class="col-5">
+            <span
+              ><img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+                alt=""
+                id="icon"
+            /></span>
+            <span id="temp">11</span><span id="degree">°C</span>
+          </div>
+        </div>
+        <div class="weather-forecast" id="weather-forecast">
+        
           </div>
         </div>
       </div>

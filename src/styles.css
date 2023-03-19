@@ -3,7 +3,23 @@ form {
   margin-top: 40px;
   padding-bottom: 30px;
 }
-
+#temp {
+  color: black;
+  font-size: 50px;
+  line-height: 1;
+  margin-left: 10px;
+}
+#icon {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  margin-top: -40px;
+}
+#degree {
+  position: relative;
+  top: -20px;
+  font-size: 25px;
+}
 .container {
   margin: 0 auto;
   max-width: 540px;
@@ -17,14 +33,15 @@ form {
   line-height: 48px;
   margin: 20px 0 10px;
 }
+
 .weather {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
   padding: 40px;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -37,4 +54,11 @@ ul {
   line-height: 20px;
   list-style: none;
   margin-bottom: 5px;
+}
+.weather-forcast {
+  text-align: center;
+  color: #878787;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 50px;
 }
