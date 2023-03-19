@@ -20,6 +20,13 @@ form {
   top: -20px;
   font-size: 25px;
 }
+footer {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 40px;
+  text-align: center;
+}
 .container {
   margin: 0 auto;
   max-width: 540px;
@@ -55,10 +62,31 @@ ul {
   list-style: none;
   margin-bottom: 5px;
 }
-.weather-forcast {
+.weather-forecast {
   text-align: center;
   color: #878787;
   margin-top: 40px;
-  margin-bottom: 40px;
-  padding-bottom: 50px;
+}
+.weather-forecast-day {
+  text-align: center;
+  margin-left: -30px;
+}
+.weather-forecast_icon {
+  margin: 0px 0px 0px -30px;
+  width: 50px;
+}
+.weather-forecast-max-temp {
+  color: #f65282;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-left: -15px;
+}
+.weather-forecast-min-temp {
+  color: #ee95b0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
 }
